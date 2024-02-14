@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Valentine's Day Greeting by Julia</title>
+    <script>
+        function share() {
+          if (navigator.share) {
+            navigator.share({
+              title: 'Valentine\'s Day Greeting by Julia',
+              url: window.location.href
+            })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
+          } else {
+            console.log('Web Share API not supported');
+          }
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="greeting-heading">Hayy Bestieeeeee</h1>        <img src="heart.png" alt="Heart" class="heart-image">
+        <p class="greeting-text">Wishing you a day filled with love and warmth! May every day be as special as today!</p>
+        <p class="greeting-text1">I gives you more love and affection</p>
+        <a href="#" class="share-button" onclick="share()">
+            <img src="share-icon.png" alt="Share Icon">
+          </a>
+    </div>
+</body>
+</html>
